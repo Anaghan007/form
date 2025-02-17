@@ -16,7 +16,7 @@ body{
     display: flex;
     align-items: start;
     justify-content: space-evenly;
-/*     margin-top: 50px; */
+    margin-top: 55px;
 }
 .contact-left{
     display: flex;
