@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.contact-container
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left img{
+    width: 100px;
+    margin-bottom:80px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    background-color: #a363aa;
+    height: 5px;
+    width: 70px;
+    border-radius: 10px;
+}
+.contact-inputs{
+    height: 35px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #ff994f;
+    cursor: pointer;
+}
+@media (max-width:2561px){
+    .contact-inputs{
+        width: 80vw;
+    }
+}
