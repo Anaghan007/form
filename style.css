@@ -19,7 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 10px;
+    gap: 15px;
 }
 .contact-left img{
     width: 100px;
