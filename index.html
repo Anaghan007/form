@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="contact-container">
-        <form action="" class="contact-left">
+        <form action="" class="contact-left" name="submit-to-google-sheet">
             <img src="/image.jpg" alt="">
             <div class="contact-left-title">
                 <h2>Student Details</h2>
@@ -27,6 +27,17 @@
             <br>
             <button type="submit">Submit</button>
         </form>
+        <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxE3vK42wmZ4bDYnTyDZQ3gAPhkbrvogmkgsKC08axjDAwSe7DIVa9NoThXoCj2x4y3lA/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert('Success!', response))
+      .catch(error => alert('Error!', error.message))
+  })
+</script>
     </div>
 </body>
 </html>
